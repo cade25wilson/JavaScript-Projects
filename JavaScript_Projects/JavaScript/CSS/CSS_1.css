@@ -1,0 +1,12 @@
+input {
+    width: 10%;
+    border: 2px solid black;
+}
+input[type=text] {
+    width: 25%;
+    padding: 3px;
+    margin: 6px 0;
+    border: 1.5px solid black;
+    background-color: cornsilk;
+    color: black;
+}
