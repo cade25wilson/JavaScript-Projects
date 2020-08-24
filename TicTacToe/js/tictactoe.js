@@ -187,7 +187,15 @@ function drawWinLine(coordX1, coordY1, coordX2, coordY2) {
                 //This condition cancels our animation loop if reach the end points.
                 if (x >= x2 && y >= y2) { cancelAnimationFrame(animationLoop); }
             }
+            //This condition is simialr to the one above.
+            //It was necessary for the 6, 4, 2 win condition.
+            if (x1 <= x2 && y1 >= y2) {
+                if (x < x2) { x+=10; }
+                if(y > y2) { y -= 10; }
+                if (x >= x2 && y <= y2) { cancelAnimationFrame(animationLoop); }
+            }
         }
+        
         //This function clears our canvas after our win line is drawn.
         function clear() {
             //This line starts our animation loop.
