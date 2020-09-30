@@ -6,8 +6,10 @@ document.write("<br>\"Happiness is not a goal"
 +" it is a by-product\""
 + "-Elanor Roosevelt<br>");   //Concatenated string making one text
 
-var B=" Part one" + " and" + " part two"
-document.write(B)   //Assigning variable "B" a value and writing it out
+var B="Part one" 
+var C=" and"
+var D=" part two"
+document.write(B+C+D)   //Assigning variable "B","C", and "D" a value and writing it out
 
 var Dealership = "Dodge", Suv="Duragno", Sedan="Charger", Coupe="Challenger", compact="Dart";
 var Suv =Suv.fontcolor("red");
